@@ -41,21 +41,22 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Angular 7
 
-1. comando para crear un nuevo proyecto angular
+1. Crear un nuevo proyecto angular
 
-ejemplo: ng new name-module
+=> ng new name-module
 
-2. genera una clase en la carpeta sepecificada: './model/' nombre: 'user', las clases representan objetos como en Java y seran los que transportemos como objetos JSON dentro de la aplicacion
- 
-ejemplo: ng generate class model/user --type=model --spec=false
+2. Crear el modelo del proyecto y un objeto TS
 
-/*
- *
- * genera un componente en la ruta specificada '.page/user/' nombre del componente: 'add-user'
- *
- */
+=> ng generate class model/user --type=model --spec=false
 
-ejemplo: ng generate component  page/user/add-user --spec=false -s --module=app
+genera una clase ts modelo en la carpeta sepecificada: ruta:'./model/' clase: 'user', las clases representan objetos como en Java y seran los que transportemos como objetos JSON dentro de la aplicacion
+
+3. Crear un componente
+
+=> ng generate component page/user/add-user --spec=false -s --module=app
+
+genera un componente en la ruta specificada '.page/user/' nombre del componente: 'add-user', genera 3 archivos un .ts, .html y .css en la ruta dada, pero para este caso el comando -s indica que no queremos un .css
+
 
 ## Angular 7 tips
 
