@@ -26,6 +26,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+## Instalar Node y Angular 7
+
 1.  descargar el instalador de node.js y ejecutar
 2.  abrir la consola de comandos y ejecutar:
 3.  npm install -g npm@latest
@@ -37,16 +39,19 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 9.  ng new user // se agrega nuevo usuario, si pide borrar una carpeta por favor hacerlo
 10. seleccionar yes cuando realice la pregunta de nuevo usuario y elegir la opcion CSS
 
-el comando: '--spec=false' es para que no genere clases de testeo
-el comando '-s' es para no generar un css propio para un componente, se usa cuando se crea un componente
-el comando '--module=app' es para especificar el componente donde debe ser importado, para caso general es nuestra aplicacion 'app-module.ts'
+## Angular 7
 /*
- *
- * genera una clase en la carpeta sepecificada: './model/' nombre: 'user'
- *
+ * comando para crear un nuevo proyecto angular
  */
+ 
+ejemplo: ng new name-module
 
-ng generate class model/user --type=model --spec=false
+/*
+ * genera una clase en la carpeta sepecificada: './model/' nombre: 'user', las clases representan objetos como en Java
+ * y seran los que transportemos como objetos JSON dentro de la aplicacion
+ */
+ 
+ejemplo: ng generate class model/user --type=model --spec=false
 
 /*
  *
@@ -54,8 +59,14 @@ ng generate class model/user --type=model --spec=false
  *
  */
 
-ng generate component  page/user/add-user --spec=false -s --module=app
+ejemplo: ng generate component  page/user/add-user --spec=false -s --module=app
 
+## Angular 7 tips
+
+- el comando: '--spec=false' es para que no genere clases de testeo
+- el comando '-s' es para no generar un css propio para un componente, se usa cuando se crea un componente
+- el comando '--module=app' es para especificar el componente donde debe ser importado, 
+  para caso general es nuestra aplicacion 'app-module.ts'
 
 npm config set proxy http://localhost:4200
 npm config set https-proxy http://localhost:4200
