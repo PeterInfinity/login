@@ -40,16 +40,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 10. seleccionar yes cuando realice la pregunta de nuevo usuario y elegir la opcion CSS
 
 ## Angular 7
-/*
- * comando para crear un nuevo proyecto angular
- */
- 
+
+1. comando para crear un nuevo proyecto angular
+
 ejemplo: ng new name-module
 
-/*
- * genera una clase en la carpeta sepecificada: './model/' nombre: 'user', las clases representan objetos como en Java
- * y seran los que transportemos como objetos JSON dentro de la aplicacion
- */
+2. genera una clase en la carpeta sepecificada: './model/' nombre: 'user', las clases representan objetos como en Java y seran los que transportemos como objetos JSON dentro de la aplicacion
  
 ejemplo: ng generate class model/user --type=model --spec=false
 
